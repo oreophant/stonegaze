@@ -3,7 +3,7 @@ var channels = ["ThijsHS", "MrYagut", "nl_Kripp", "Forsenlol", "Kolento", "AmazH
 
 // make JSONP call
 function apiCall(channel) {
-    $.getJSON("https://api.twitch.tv/kraken/streams/" + channel+'/?callback=?', function(data) {
+    $.getJSON("https://api.twitch.tv/kraken/streams/" + channel+'/?client_id=22xj4zdfbfkqf210l5j956e59jtlogu', function(data) {
 
         var html, streamStatus;
 
